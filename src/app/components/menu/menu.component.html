@@ -1,0 +1,61 @@
+<app-food-search></app-food-search>
+<div class="box">
+    <h3>Menu</h3>
+    <mat-divider></mat-divider>
+    <div class="list">
+        <mat-card>
+            <mat-card-content>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-content>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-content>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+                <ng-template *ngTemplateOutlet="food"></ng-template>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+
+<ng-template #food>
+    <div class="main">
+        <div class="m-left">
+            <p><mat-icon class="veg">fiber_manual_record</mat-icon></p>
+            <p class="name">Kadhai paneer</p>
+            <p class="rupee">₹445</p>
+            <p class="star"><mat-icon>star</mat-icon> &nbsp;4.5 <span>&nbsp;(126)</span></p>
+            <button mat-button color="accent" (click)="openBottomSheet()">Details</button>   
+        </div>
+        
+        <div class="m-right">
+            <div>
+                <img class="r-img" src="../../../assets/images/kadhai.jpg">
+            </div>
+            <button mat-raised-button color="primary">Add</button>   
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+</ng-template>

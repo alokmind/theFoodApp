@@ -1,0 +1,47 @@
+.banner {
+    background-image: url('../../../assets/images/food-banner.jpg');
+    height: 350px;
+    background-position-y: -330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+        display: inline-block;
+        width: 70%;
+        max-width: 550px;
+        background: rgb(255 255 255 / 70%);
+
+        mat-card-content {
+            padding: 5px
+        }
+
+        .discount {
+            position: absolute;
+            top: -23px;
+            left: -17px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        justify-content: end;
+    }
+
+    .search-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    mat-form-field{
+        width: 100%;
+    }
+}
+
+::ng-deep .banner .mat-mdc-form-field-subscript-wrapper {display: none;}

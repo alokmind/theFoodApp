@@ -1,0 +1,136 @@
+.content{
+    padding: 0 20px 15px 20px;
+
+    h3 {
+        margin: 20px 0;
+        font-weight: 700;
+    }
+
+    mat-divider{
+        margin-bottom: 15px;
+    }
+
+    .r-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .r-items {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        // justify-content: center;
+
+        mat-card {
+            width: 23.4%;
+
+            .r-image {
+                background-image: url('../../../assets/images/f1.jpg');
+                height: 150px;
+                background-size: cover;
+            }
+
+            .r-kfc {
+                background-image: url('../../../assets/images/kfc.jpg');
+                height: 150px;
+                background-size: cover;
+            }
+
+            .r-burger {
+                background-image: url('../../../assets/images/burger.jpg');
+                height: 150px;
+                background-size: cover;
+                background-position-y: -291px;
+            }
+
+            .r-box {
+                display: flex;
+                justify-content: space-between;
+
+                .r-name {
+                    font-size: 12px;
+                    color: #673ab7;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .r-detail{
+                    font-size: 10px;
+                    color: #888;
+                    margin: 0;
+                }
+                .star{
+                    background: orange;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    width: 36px;
+                    margin: 0;
+                    padding: 1px 5px;
+                    border-radius: 5px;
+                    mat-icon {
+                        font-size: 16px;
+                        height: 18px;
+                        width: 18px;
+                    }
+                }
+
+                .logo-box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    position: relative;
+
+                    .i-box {
+                        position: absolute;
+                        top: -26px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 95px;
+                    }
+
+                    button {
+                        font-size: 12px;
+                        height: 30px;
+                    }
+
+                    .r-logo {
+                        width: 55px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .cat-items {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        mat-card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .r-cat {
+            width: 70px;
+        }
+
+        .cat-txt {
+            margin: 10px 0 0 0;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        mat-card {
+            width: 31.5% !important;
+        }
+      }
+    
+}

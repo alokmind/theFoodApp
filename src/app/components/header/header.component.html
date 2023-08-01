@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="menu">
+        <!-- <button *ngIf="mobileQuery.matches" mat-icon-button class="example-icon"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button> -->
+        <button mat-button class="example-icon" aria-label="1" routerLink="/">
+            Food App
+        </button>
+        <!-- <div *ngIf="!mobileQuery.matches">
+            <button mat-button class="example-icon" aria-label="1">
+                Restaurants
+            </button>
+            <button mat-button class="example-icon" aria-label="2">
+                Products
+            </button>
+            <button mat-button class="example-icon" aria-label="3">
+                Category 
+            </button>
+            <button mat-button class="example-icon" aria-label="3">
+                Top Brands 
+            </button>
+            <button mat-button class="example-icon" aria-label="3">
+                Featured Restaurants 
+            </button>
+        </div> -->
+        <div class="login">
+            <button mat-button class="example-icon" aria-label="3">
+                Login 
+            </button>
+            <button mat-button class="example-icon" aria-label="3">
+                Sign Up 
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="cart" routerLink="/checkout">
+                <mat-icon>shopping_cart</mat-icon>
+            </button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

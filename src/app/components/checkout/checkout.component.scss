@@ -1,0 +1,64 @@
+.checkout {
+    width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+
+    mat-card {
+        margin-bottom: 20px;
+    }
+
+    .address {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            font-weight: 500;
+            margin: 0;
+
+            mat-icon {
+                font-size: 16px;
+                width: 16px;
+                height: 15px;
+            }
+        }
+    }
+
+    .food {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .coupon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .bill {
+        h4, .total{
+            font-weight: 500;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .note {
+
+        span{
+            color: red;
+        }
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+::ng-deep .checkout .mat-mdc-form-field-subscript-wrapper {display: none;}
