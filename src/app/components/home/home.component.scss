@@ -134,3 +134,99 @@
       }
     
 }
+
+
+.p-items{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    mat-card {
+        width: 23.4%;
+
+        mat-card-content {
+            padding: 0;
+        }
+    }
+    
+    .r-pop {
+        background-image: url('../../../assets/images/f5.jpg');
+        height: 150px;
+        background-size: cover;
+        position: relative;
+
+        div, p {
+            position: absolute;
+        }
+
+        img {
+            width: 65px;
+        }
+
+        p{
+            font-size: 10px;
+            color: #fff;
+            left: 6px;
+            top: 19px;
+        }
+        div{
+            top: 4px;
+            left: -1px;
+        }
+
+
+    }
+    .r-box {
+        padding: 10px;
+
+        .title, .price {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .txt {
+            font-size: 12px;
+            margin-bottom: 5px;
+            color: grey;
+        }
+
+        .price {
+            margin-bottom: 30px;
+        }
+
+        button {
+            border: 1px solid green;
+            color: green
+        }
+
+        .buttons {
+            // width: 100px;
+            display: flex;
+
+            button {
+                min-width: 40px;
+            }
+
+            .mat-icon {
+                margin: 0;
+            }
+
+            p{
+                margin: 0;
+                background: green;
+                display: flex;
+                align-items: center;
+                width: 40px;
+                justify-content: center;
+                position: relative;
+                left: -1px;
+                color: #fff;
+            }
+
+            .plus {
+                position: relative;
+                left: -3px;
+            }
+        }
+    }
+}

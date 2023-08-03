@@ -14,6 +14,7 @@ import { RestaurentDetailComponent } from './components/restaurent-detail/restau
 import { MenuComponent } from './components/menu/menu.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { NewHeadComponent } from './components/new-head/new-head.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     RestaurentDetailComponent,
     MenuComponent,
     ItemDetailComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    NewHeadComponent
   ],
   imports: [
     BrowserModule,

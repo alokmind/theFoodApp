@@ -1,0 +1,92 @@
+.head {
+    display: flex;
+    margin: 10px 30px;
+
+    .left, .right {
+        width: 50%;
+        // border: 1px solid;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+         
+        .content {
+            .head-text {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-weight: bold;
+
+                .fast {
+                    font-size: 100px;
+                    line-height: 1;
+                    margin: 0;
+                    color: #FF7E00;
+                }
+
+                .food {
+                    font-size: 40px;
+                    margin: 0;
+                    line-height: 1;
+                }
+            }
+            .detail {
+                color: #909090;
+                font-size: 20px;
+                margin: 25px 0px;
+            }
+
+            .actions {
+                display: flex;
+                align-items: center;
+
+               .order {
+                background: #000;
+                color: #fff;
+                padding: 20px;
+                border-radius: 22px;
+               }
+               .vid {
+                display: flex;
+                align-items: center;
+
+                .play {
+                    background-color: #fff;
+                    width: 34px;
+                    height: 34px;
+                    margin: 0 5px 0 20px;
+
+                    mat-icon {
+                        font-size: 35px;
+                            height: 34px;
+                            width: 34px;
+                        }
+                    }
+               }
+
+            }
+
+            .review {
+                margin-top: 50px;
+
+                .star {
+                    color: gold;
+                    margin-bottom: 5px;
+                }
+                .s-txt{
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+                .s-sub-txt {
+                    color: #909090;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .ban {
+        width: 510px;
+        float: right;
+    }
+}
